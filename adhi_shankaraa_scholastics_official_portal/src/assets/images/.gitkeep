@@ -1,0 +1,2 @@
+# Drop official local image assets here and reference them from src/data/societyData.js.
+# The Google Stitch export currently references remote images on lh3.googleusercontent.com.

@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/*  Base resets — copied verbatim from the Google Stitch <head>       */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  body {
+    overscroll-behavior: none;
+    /* Safety net: nothing may create a horizontal scrollbar.
+       `clip` (not `hidden`) keeps position: sticky and smooth-scroll working. */
+    overflow-x: clip;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Media never overflows its container. */
+  img,
+  picture,
+  svg,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Shared responsive shell — replaces the long, repeated            */
+/*  `max-w-layout-max-width mx-auto px-…` class string on every       */
+/*  section. One place to tune horizontal rhythm per breakpoint.      */
+/* ------------------------------------------------------------------ */
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: theme('spacing.layout-max-width');
+    margin-inline: auto;
+    padding-inline: 1rem; /* 320–399px */
+  }
+
+  @media (min-width: 400px) {
+    .shell {
+      padding-inline: theme('spacing.layout-margin-mobile'); /* 1.25rem */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .shell {
+      padding-inline: theme('spacing.layout-margin-tablet'); /* 2.5rem */
+    }
+  }
+
+  /* Full desktop gutter reserved for ≥1280 so the 1024–1279 laptop range
+     keeps usable width (and the header nav fits without wrapping). */
+  @media (min-width: 1280px) {
+    .shell {
+      padding-inline: theme('spacing.layout-margin-desktop'); /* 5rem */
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth-scroll for in-page anchor navigation (About / Affiliated School / Contact). */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offsets in-page anchor jumps so targeted sections clear the fixed h-20 header. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Entrance / scroll-reveal system                                   */
+/*  Elements tagged `data-reveal` start hidden and animate in once     */
+/*  <Reveal> flips `data-shown` to "true" (IntersectionObserver).      */
+/*  GPU-friendly: only opacity + transform are animated.               */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    transition:
+      opacity 620ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 620ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  [data-reveal][data-variant='fade'] {
+    transform: none;
+  }
+
+  [data-reveal][data-variant='zoom'] {
+    transform: scale(1.04);
+  }
+
+  /* Hint the compositor only while the element is still waiting to reveal. */
+  [data-reveal]:not([data-shown='true']) {
+    will-change: opacity, transform;
+  }
+
+  [data-reveal][data-shown='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Font hierarchy override — copied verbatim from the Stitch export  */
+/*  (#font-hierarchy-override). Keep the !important rules intact.      */
+/* ------------------------------------------------------------------ */
+
+/* 1. Main headings */
+h1,
+h2,
+.font-display,
+[class*='font-display'],
+.hero-title {
+  font-family: 'Merriweather', Georgia, serif !important;
+  font-weight: 700 !important;
+}
+
+/* 2. Subheadings, card titles, category headers, navigation links, badges, stat labels */
+h3,
+h4,
+h5,
+h6,
+.font-headline,
+[class*='font-headline'],
+nav a,
+.font-title,
+[class*='font-title'],
+.badge,
+.label,
+[class*='font-label'] {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* 3. Descriptive body text, paragraphs, descriptions, quote text, inputs, footer copy */
+body,
+p,
+input,
+select,
+textarea,
+.font-body,
+[class*='font-body'] {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Material Symbols base (matches the Google-hosted stylesheet defaults). */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}

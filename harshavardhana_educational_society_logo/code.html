@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B1248" />
+      <stop offset="100%" stop-color="#2D0B2B" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3C64F" />
+      <stop offset="100%" stop-color="#C89620" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Ring -->
+  <circle cx="120" cy="120" r="112" fill="none" stroke="#4B1248" stroke-width="4" />
+  <circle cx="120" cy="120" r="104" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4,2" />
+  <circle cx="120" cy="120" r="100" fill="url(#purpleGrad)" />
+  
+  <!-- Text Ring Path -->
+  <path id="textCircleTop" d="M 32,120 A 88,88 0 1,1 208,120" fill="none" />
+  <path id="textCircleBottom" d="M 208,120 A 88,88 0 0,1 32,120" fill="none" />
+  
+  <text font-family="'Times New Roman', Georgia, serif" font-size="10.5" font-weight="bold" fill="#FBF8F3" letter-spacing="1.5">
+    <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle">
+      ADHI SHANKARAA SCHOLASTICS
+    </textPath>
+  </text>
+  <text font-family="'Times New Roman', Georgia, serif" font-size="9.5" font-weight="bold" fill="#F3C64F" letter-spacing="1.2">
+    <textPath href="#textCircleBottom" startOffset="50%" text-anchor="middle">
+      ESTD. 2006 • CHERUKUPALLI
+    </textPath>
+  </text>
+
+  <!-- Inner Circle -->
+  <circle cx="120" cy="120" r="68" fill="#FAF6F0" stroke="url(#goldGrad)" stroke-width="2" />
+
+  <!-- Academic Emblem: Torch / Flame & Book in Regal Purple -->
+  <!-- Open Book -->
+  <path d="M 94,142 Q 107,136 120,140 Q 133,136 146,142 L 144,152 Q 132,147 120,150 Q 108,147 96,152 Z" fill="#4B1248" />
+  <path d="M 120,140 L 120,150" stroke="#FAF6F0" stroke-width="1.5" />
+  
+  <!-- Torch Body -->
+  <path d="M 115,136 L 125,136 L 122,120 L 118,120 Z" fill="url(#goldGrad)" />
+  <path d="M 113,120 L 127,120 L 129,114 L 111,114 Z" fill="#4B1248" />
+  
+  <!-- Radiant Knowledge Flame -->
+  <path d="M 120,86 C 127,96 132,103 126,112 C 123,106 122,105 120,103 C 118,105 117,106 114,112 C 108,103 113,96 120,86 Z" fill="url(#goldGrad)" />
+  <circle cx="120" cy="106" r="3" fill="#D9480F" />
+
+  <!-- Laurel sprigs around inner frame -->
+  <path d="M 82,118 Q 78,98 94,84" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" />
+  <path d="M 158,118 Q 162,98 146,84" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" />
+</svg>
