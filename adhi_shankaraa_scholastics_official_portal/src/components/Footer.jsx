@@ -80,10 +80,10 @@ export default function Footer() {
                   </a>
                   <a
                     className="flex items-center gap-space-2xs hover:text-secondary-fixed transition-colors text-surface-bright min-w-0"
-                    href="mailto:info@harshavardhanaeducationalsociety.com"
+                    href="mailto:adhishankaraascholasticswork@gmail.com"
                   >
                     <Icon name="mail" className="text-[16px] text-secondary-fixed shrink-0" />
-                    <span className="break-all">info@harshavardhanaeducationalsociety.com</span>
+                    <span className="break-all">adhishankaraascholasticswork@gmail.com</span>
                   </a>
                 </div>
               </div>
