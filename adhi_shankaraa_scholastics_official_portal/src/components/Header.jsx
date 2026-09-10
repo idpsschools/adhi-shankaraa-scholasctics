@@ -67,7 +67,7 @@ export default function Header() {
               Adhi Shankaraa Scholastics
             </span>
             <span className="block font-label-caps text-[9px] xs:text-[10px] md:text-label-caps text-secondary font-semibold tracking-wider uppercase mt-space-3xs truncate">
-              {/* Regd. No. 464 of 2006 | Cherukupalli, A.P. */}
+              Educational Supplies &amp; Institutional Services
             </span>
           </div>
         </a>
@@ -95,7 +95,7 @@ export default function Header() {
             <a
               className="hidden lg:flex w-9 h-9 rounded-full bg-surface-container border border-secondary/40 items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors"
               href="#contact"
-              aria-label="Email the Corporate Executive Office"
+              aria-label="Email Adhi Shankaraa Scholastics"
             >
               <Icon name="mail" className="text-[20px]" />
             </a>

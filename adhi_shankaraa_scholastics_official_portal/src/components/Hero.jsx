@@ -11,12 +11,12 @@ export default function Hero() {
           <span className="inline-flex items-center gap-space-2xs bg-primary/5 border border-secondary/40 px-space-sm py-space-3xs rounded-full shadow-sm">
             <span className="w-2 h-2 rounded-full bg-secondary"></span>
             <span className="font-label-caps text-label-caps text-primary font-bold uppercase tracking-widest">
-              Scholastic Licensing & Brand Services
+              Educational Supplies & Institutional Services
             </span>
           </span>
           <span className="text-secondary font-label-caps text-label-caps">♦</span>
           <span className="font-label-caps text-label-caps text-on-surface-variant tracking-wider">
-            Trademark Licensing, Certification & Institutional Support
+            Books · Uniforms · Stationery · Campus Essentials
           </span>
         </Reveal>
 
@@ -27,7 +27,7 @@ export default function Hero() {
               Adhi Shankaraa Scholastics
             </h1>
             <p className="font-headline-md text-headline-md text-on-surface-variant font-normal leading-relaxed mb-space-md max-w-3xl">
-              A registered company, Adhi Shankaraa Scholastics, based in Cherukupalli, Andhra Pradesh, engaged in providing legal, certification, and licensing services, including the licensing of trademarks and franchises to International Delhi Public School, Cherukupalli,.
+              Adhi Shankaraa Scholastics is a partnership firm based in Cherukupalli, Andhra Pradesh, supplying school books, uniforms, stationery and everyday campus essentials to schools and educational institutions. We handle bulk and recurring orders for multiple institutions — not a single school.
             </p>
             <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-space-sm pt-space-xs">
               <a
@@ -41,8 +41,8 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest text-primary font-label-md text-label-md px-space-md py-space-sm rounded-md border border-outline-variant/60 shadow-sm hover:border-secondary hover:-translate-y-0.5 transition-all duration-200"
                 href="#school"
               >
-                <Icon name="school" className="text-[18px] text-secondary" />
-                <span>Explore Affiliated School</span>
+                <Icon name="inventory_2" className="text-[18px] text-secondary" />
+                <span>See What We Supply</span>
               </a>
             </div>
           </Reveal>
@@ -57,11 +57,11 @@ export default function Hero() {
               <div className="flex items-center gap-space-xs text-secondary">
                 <Icon name="verified" className="text-[20px]" />
                 <span className="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">
-                  Educational Licensing & Brand Management
+                  Institutional Supply Partner
                 </span>
               </div>
               <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                A registered company engaged in legal documentation, certification, and licensing services, including the authorized licensing of educational trademarks and franchises. Supporting associated educational institutions through structured licensing and royalty arrangements.
+                A single point of contact for the materials an institution needs each year — sourced from established suppliers, quoted for bulk and repeat orders, and delivered on a schedule that fits the academic calendar.
               </p>
             </div>
           </Reveal>
@@ -71,9 +71,9 @@ export default function Hero() {
         <Reveal as="div" variant="fade" className="mt-space-2xl relative">
           <div className="w-full rounded-xl overflow-hidden shadow-2xl bg-surface-container-high relative aspect-[4/3] xs:aspect-[16/10] md:aspect-[16/9] max-h-[580px] border border-outline-variant/40">
             <img
-              alt="International Delhi Public School, Cherukupalli Campus Entrance Gate — Managed by Adhi Shankaraa Scholastics"
+              alt="Students reading textbooks in a school library — the institutions Adhi Shankaraa Scholastics supplies"
               className="w-full h-full object-cover object-center"
-              src={IMG.heroCampus}
+              src={IMG.heroLibrary}
               loading="eager"
               fetchpriority="high"
               decoding="async"
@@ -82,29 +82,29 @@ export default function Hero() {
             <div className="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-auto md:max-w-xl bg-primary/95 text-on-primary backdrop-blur-md p-space-sm md:p-space-md rounded-lg shadow-2xl border border-secondary/40 flex items-center gap-space-sm md:gap-space-md">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-surface-container-lowest p-1 shadow-sm shrink-0 flex items-center justify-center">
                 <img
-                  alt="IDPS Emblem"
+                  alt="Adhi Shankaraa Scholastics"
                   className="w-full h-full object-contain"
-                  src={IMG.heroCaptionEmblem}
+                  src={IMG.societySeal}
                   loading="lazy"
                   decoding="async"
                 />
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider">
-                  Campus Showcase
+                  Serving Institutions
                 </span>
                 <span className="font-headline-sm text-[15px] md:text-[18px] text-surface-bright font-bold leading-snug">
-                  Campus of International Delhi Public School, Cherukupalli
+                  Supplying schools and educational institutions across the region
                 </span>
                 <span className="font-body-sm text-body-sm text-on-primary-container hidden xs:block">
-                  Managed by Adhi Shankaraa Scholastics
+                  Books · Uniforms · Stationery · Campus essentials
                 </span>
               </div>
             </div>
           </div>
         </Reveal>
 
-        {/* Quick Statutory Highlight Ribbon */}
+        {/* Quick Highlight Ribbon */}
         <Reveal
           as="div"
           variant="fade"

@@ -76,7 +76,7 @@
   display: none;
 }
 
-/* Smooth-scroll for in-page anchor navigation (About / Affiliated School / Contact). */
+/* Smooth-scroll for in-page anchor navigation (About / Products & Services / Contact). */
 html {
   scroll-behavior: smooth;
 }

@@ -36,31 +36,31 @@ export default function CampusShowcase() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
           <Reveal as="div" className="lg:col-span-5 flex flex-col gap-space-xs">
             <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-semibold">
-              Scholastic Infrastructure
+              Across Campus Life
             </span>
             <h2 className="font-headline-lg text-headline-lg text-primary tracking-tight text-balance">
-              Modern Campus &amp; Athletic Complex
+              From Classrooms to Playing Fields
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              The educational institution associated with Adhi Shankaraa Scholastics at Cherukupalli offers modern physical infrastructure, including a multi-storey academic complex, spacious corridors, professional all-weather sports courts, an athletic track, and dedicated recreational facilities for early childhood education.
+              A school needs more than textbooks. Adhi Shankaraa Scholastics supplies materials for every part of institutional life — classroom teaching, sports and physical education, examinations, health rooms, and school events and cultural programmes — so administrators can source it all from one partner.
             </p>
             <div className="grid grid-cols-1 xs:grid-cols-2 gap-space-sm pt-space-xs">
               <div className="p-space-sm bg-surface-container-lowest rounded-lg border border-outline-variant/50">
                 <div className="flex items-center gap-space-2xs text-secondary font-bold text-[18px]">
-                  <Icon name="sports_tennis" className="text-[20px]" />
-                  <span>Multi-Sport</span>
+                  <Icon name="menu_book" className="text-[20px]" />
+                  <span>Academic Supplies</span>
                 </div>
                 <span className="font-label-sm text-label-sm text-on-surface-variant">
-                  Tennis, Basketball &amp; Track
+                  Books, stationery &amp; exam materials
                 </span>
               </div>
               <div className="p-space-sm bg-surface-container-lowest rounded-lg border border-outline-variant/50">
                 <div className="flex items-center gap-space-2xs text-secondary font-bold text-[18px]">
-                  <Icon name="apartment" className="text-[20px]" />
-                  <span>Modern Wing</span>
+                  <Icon name="checkroom" className="text-[20px]" />
+                  <span>Campus Essentials</span>
                 </div>
                 <span className="font-label-sm text-label-sm text-on-surface-variant">
-                  Elevator-fitted Academic Block
+                  Uniforms, sports &amp; facility supplies
                 </span>
               </div>
             </div>

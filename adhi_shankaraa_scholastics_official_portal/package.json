@@ -1,9 +1,9 @@
 {
-  "name": "harshavardhana-educational-society-portal",
+  "name": "adhi-shankaraa-scholastics-portal",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "React implementation of the Adhi Shankaraa Scholastics website (converted from a Google Stitch export).",
+  "description": "Website for Adhi Shankaraa Scholastics — a partnership firm supplying educational materials and institutional services to schools and educational institutions.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

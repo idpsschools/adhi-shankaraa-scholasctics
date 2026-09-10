@@ -11,15 +11,14 @@ export default function About() {
           <div className="flex items-center gap-space-2xs mb-space-2xs">
             <span className="w-2 h-2 rounded-full bg-secondary"></span>
             <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">
-              Foundation &amp; Community Mission
+              Who We Are
             </span>
           </div>
           <h2 className="font-display-md text-display-md text-primary tracking-tight mb-space-md text-balance">
             About Adhi Shankaraa Scholastics
           </h2>
-          {/* Verbatim Body Copy */}
           <p className="font-body-lg text-body-lg text-on-surface leading-relaxed text-left">
-            Adhi Shankaraa Scholastics is an educational services and licensing company based in Cherukupalli, Bapatla district, Andhra Pradesh. The company provides scholastic, certification, documentation, and intellectual-property licensing services to educational institutions. Its role includes facilitating the authorized use of educational trademarks and associated brand assets, supporting institutional requirements through structured licensing arrangements, and administering applicable royalty and related commercial arrangements. In connection with International Delhi Public School, Cherukupalli, Adhi Shankaraa Scholastics provides the relevant trademark and licensing framework under which the school operates.
+            Adhi Shankaraa Scholastics is a partnership firm based in Cherukupalli, Bapatla district, Andhra Pradesh, supplying educational materials and institutional services to schools and educational institutions. Our work covers school books and learning materials, uniforms, stationery and academic essentials, and the wider range of supplies an institution needs to run day to day. We work with multiple schools and educational organisations — handling bulk and recurring orders, coordinating delivery around the academic calendar, and supporting administrators with dependable procurement. We are an independent supplier and are not tied to any single school or institution.
           </p>
         </Reveal>
 
@@ -54,7 +53,7 @@ export default function About() {
           ))}
         </div>
 
-        {/* Institutional Quote Card with Official Society Seal */}
+        {/* Institutional Quote Card with company seal */}
         <Reveal
           as="div"
           variant="fade"
@@ -73,11 +72,12 @@ export default function About() {
           </div>
           <div className="flex flex-col">
             <p className="font-headline-md text-headline-md text-primary italic leading-snug text-pretty">
-              “Education is the sovereign instrument of social transformation. Our solemn duty under
-              Act 2001 is to illuminate minds and cultivate disciplined, empathetic leaders.”
+              “Schools run on the small things arriving on time — the right books, the right uniforms,
+              the right supplies, ready before the term begins. That is the job we take on for every
+              institution we work with.”
             </p>
             <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest mt-space-xs font-bold">
-              Governing Council • Adhi Shankaraa Scholastics
+              The Partners • Adhi Shankaraa Scholastics
             </span>
           </div>
         </Reveal>

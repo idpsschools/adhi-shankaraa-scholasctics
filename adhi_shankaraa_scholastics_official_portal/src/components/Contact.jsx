@@ -29,7 +29,7 @@ export default function Contact() {
     if (!emailjsConfigured) {
       setStatus('error');
       setErrorMsg(
-        'The enquiry form is not configured yet. Please email the corporate office directly, or try again later.',
+        'The enquiry form is not configured yet. Please email us directly, or try again later.',
       );
       // Helpful hint for whoever is running the site.
       console.warn(
@@ -68,13 +68,13 @@ export default function Contact() {
           <div className="flex items-center gap-space-2xs mb-space-2xs">
             <span className="w-2 h-2 rounded-full bg-secondary"></span>
             <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">
-              Communications &amp; Inquiries
+              Enquiries &amp; Orders
             </span>
           </div>
           <h2 className="font-display-md text-display-md text-primary tracking-tight text-balance">Get in Touch</h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant mt-space-2xs">
-            Connect directly with corporate governance or administrative staff at our Associated Institution
-            campus.
+            Reach us for product catalogues, bulk quotes, uniform orders or a supply schedule for the
+            coming term.
           </p>
         </Reveal>
 
@@ -82,14 +82,14 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
           {/* Left Column: Verified Addresses & Registry Data */}
           <Reveal as="div" className="lg:col-span-5 flex flex-col gap-space-md">
-            {/* Society Office Address Card */}
+            {/* Office Address Card */}
             <div className="bg-surface-container-lowest p-space-lg rounded-xl border border-secondary/30 shadow-sm flex flex-col gap-space-sm">
               <div className="flex items-center gap-space-xs text-primary">
                 <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-secondary/40 bg-primary flex items-center justify-center">
-                  <img alt="Society Seal" className="w-full h-full object-contain" src={IMG.societySeal} />
+                  <img alt="Adhi Shankaraa Scholastics" className="w-full h-full object-contain" src={IMG.societySeal} />
                 </div>
                 <span className="font-headline-sm text-[18px] text-primary font-bold">
-                  Registered Corporate Office
+                  Office
                 </span>
               </div>
               <div className="flex flex-col gap-space-3xs pl-space-md border-l-2 border-secondary">
@@ -102,42 +102,42 @@ export default function Contact() {
                   Bapatla District, Andhra Pradesh – 522259, India
                 </p>
                 <span className="font-label-sm text-label-sm text-secondary font-semibold mt-space-2xs">
-                  Societies Registration No. 464 of 2006
+                  Partnership firm · Educational supplies &amp; services
                 </span>
               </div>
             </div>
 
-            {/* School Campus Location Card */}
+            {/* Orders & Delivery Card */}
             <div className="bg-surface-container-lowest p-space-lg rounded-xl border border-secondary/30 shadow-sm flex flex-col gap-space-sm">
               <div className="flex items-center gap-space-xs text-primary">
-                <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-secondary/40 bg-surface-container-lowest flex items-center justify-center p-0.5">
-                  <img alt="IDPS Logo" className="w-full h-full object-contain" src={IMG.contactSchoolLogo} />
+                <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-secondary/40 bg-primary flex items-center justify-center p-0.5">
+                  <img alt="Adhi Shankaraa Scholastics" className="w-full h-full object-contain" src={IMG.societySeal} />
                 </div>
                 <span className="font-headline-sm text-[18px] text-primary font-bold">
-                  Affiliated School Campus Location
+                  Orders &amp; Delivery
                 </span>
               </div>
               <div className="flex flex-col gap-space-3xs pl-space-md border-l-2 border-secondary">
                 <p className="font-headline-sm text-[16px] text-primary font-bold">
-                  International Delhi Public School, Cherukupalli
+                  Supply for schools &amp; institutions
                 </p>
                 <p className="font-body-md text-body-md text-on-surface leading-relaxed">
-                  Ponnappalli, Cherukupalli,
+                  Bulk, recurring and seasonal orders for
                   <br />
-                  Andhra Pradesh – 522259, India
+                  educational institutions across Andhra Pradesh
                 </p>
                 <span className="font-label-sm text-label-sm text-secondary font-semibold mt-space-2xs">
-                  CBSE Affiliation No. 130739
+                  Books · Uniforms · Stationery · Campus essentials
                 </span>
               </div>
             </div>
 
-            {/* Official Office Hours Note */}
+            {/* Office Hours Note */}
             <div className="bg-surface-container-low border border-outline-variant/40 p-space-md rounded-xl flex items-center gap-space-sm text-on-surface">
               <Icon name="schedule" className="text-[24px] text-secondary shrink-0" />
               <div className="flex flex-col">
                 <span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider font-semibold">
-                  Administrative Hours
+                  Office Hours
                 </span>
                 <p className="font-body-sm text-body-sm text-on-surface font-medium">
                   Office hours: Monday to Saturday, 9:00 AM to 5:00 PM IST.
@@ -151,14 +151,14 @@ export default function Contact() {
             <div className="bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl border border-secondary/30 shadow-md">
               <div className="mb-space-lg">
                 <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest font-bold">
-                  Communication Channel
+                  Enquiry Form
                 </span>
                 <h3 className="font-headline-md text-headline-md text-primary mt-space-3xs font-bold">
-                  Corporate &amp; Enquiry
+                  Send Us an Enquiry
                 </h3>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mt-space-3xs">
-                  Please complete the form below. Inquiries are reviewed directly by the executive
-                  administration.
+                  Tell us what your institution needs — books, uniforms, stationery or a full supply
+                  schedule — and we&rsquo;ll get back to you with details and pricing.
                 </p>
               </div>
               <form
@@ -243,12 +243,13 @@ export default function Contact() {
                     disabled={sending}
                   >
                     <option disabled value="">
-                      Select an inquiry nature...
+                      Select the nature of your enquiry...
                     </option>
-                    <option value="General Corporate Inquiry">General Corporate Inquiry</option>
-                    <option value="School Admissions">School Admissions (IDPS Cherukupalli)</option>
-                    <option value="Academic Collaboration">Academic Collaboration</option>
-                    <option value="Other">Other Institutional Matter</option>
+                    <option value="Books & Learning Materials">Books &amp; Learning Materials</option>
+                    <option value="School Uniforms">School Uniforms</option>
+                    <option value="Stationery & Academic Essentials">Stationery &amp; Academic Essentials</option>
+                    <option value="Bulk / Recurring Supply">Bulk / Recurring Supply</option>
+                    <option value="Other Enquiry">Other Enquiry</option>
                   </select>
                 </div>
 
@@ -282,7 +283,7 @@ export default function Contact() {
                     />
                   </button>
                   <p className="font-label-sm text-label-sm text-on-surface-variant">
-                    Your message is delivered directly to the corporate executive office.
+                    Your message is delivered directly to our office.
                   </p>
                 </div>
 
@@ -295,8 +296,8 @@ export default function Contact() {
                 >
                   <Icon name="check_circle" className="text-secondary text-[20px] shrink-0" />
                   <span className="font-body-sm text-body-sm font-semibold">
-                    Thank you. Your message has been received by the Adhi Shankaraa Scholastics
-                    secretariat.
+                    Thank you. Your enquiry has been received by the Adhi Shankaraa Scholastics
+                    team.
                   </span>
                 </div>
 

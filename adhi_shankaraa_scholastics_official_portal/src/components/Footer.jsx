@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center gap-space-sm">
               <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-secondary bg-surface-container-lowest flex items-center justify-center">
                 <img
-                  alt="Society Seal"
+                  alt="Adhi Shankaraa Scholastics"
                   className="w-full h-full object-contain"
                   src={IMG.societySeal}
                   loading="lazy"
@@ -25,38 +25,38 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-body-sm text-body-sm text-on-primary-container">
-              An education-focused company supporting modern schooling through educational licensing, scholastic services, certification, and institutional partnerships, with a commitment to quality education and the development of well-rounded learning environments across Andhra Pradesh.
+              A partnership firm supplying school books, uniforms, stationery and campus essentials to schools and educational institutions, with bulk and recurring orders planned around the academic calendar.
             </p>
             <div className="flex flex-col gap-space-3xs pt-space-xs">
               <span className="font-label-caps text-label-caps text-secondary-fixed uppercase font-bold">
-                Corporate Credentials
+                What We Supply
               </span>
               <span className="font-body-sm text-body-sm text-surface-bright">
-                Educational Licensing & Scholastic Services
+                Books, Uniforms & Stationery
               </span>
               <span className="font-body-sm text-body-sm text-on-primary-container">
-                Trademark Licensing · Certification · Institutional Support
+                Academic essentials & institutional supply services
               </span>
             </div>
           </div>
 
           <div className="md:col-span-4 flex flex-col gap-space-sm">
             <span className="font-label-caps text-label-caps text-secondary-fixed uppercase font-bold">
-              Institutional Association
+              What We Do
             </span>
             <div className="flex flex-col gap-space-2xs">
               <span className="font-headline-sm text-[16px] text-surface-bright font-bold">
-                Educational Licensing & Scholastic Services:
+                Products & Services:
               </span>
               <p className="font-body-sm text-body-sm text-surface-bright font-semibold">
-                International Delhi Public School, Cherukupalli
+                Educational materials, uniforms and campus essentials
               </p>
-              <p className="font-body-sm text-body-sm text-secondary-fixed">CBSE Affiliation No. 130739</p>
+              <p className="font-body-sm text-body-sm text-secondary-fixed">Supply & procurement support for institutions</p>
             </div>
             <div className="flex flex-col gap-space-xs pt-space-2xs">
               <div className="flex flex-col gap-space-3xs">
                 <span className="font-label-caps text-label-caps text-secondary-fixed uppercase font-bold">
-                  Registered Administrative Office
+                  Office
                 </span>
                 <p className="font-body-sm text-body-sm text-surface-bright font-semibold">
                   Adhi Shankaraa Scholastics
@@ -73,10 +73,10 @@ export default function Footer() {
                 <div className="flex flex-col gap-1 font-body-sm text-body-sm text-on-primary-container">
                   <a
                     className="inline-flex items-center gap-space-2xs hover:text-secondary-fixed transition-colors text-surface-bright"
-                    href="tel:+917075164143"
+                    href="tel:+918639783930"
                   >
                     <Icon name="call" className="text-[16px] text-secondary-fixed shrink-0" />
-                    <span>+91- 7075164143</span>
+                    <span>+91- 8639783930</span>
                   </a>
                   <a
                     className="flex items-center gap-space-2xs hover:text-secondary-fixed transition-colors text-surface-bright min-w-0"
@@ -104,17 +104,31 @@ export default function Footer() {
                   {link.label}
                 </a>
               ))}
+              <a
+                className="font-label-md text-label-md text-surface-bright/80 hover:text-secondary-fixed transition-colors"
+                href="#/privacy"
+              >
+                Privacy Policy
+              </a>
             </div>
           </div>
         </Reveal>
 
         <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm text-center md:text-left">
           <p className="font-body-sm text-body-sm text-on-primary-container">
-            © 2024 Adhi Shankaraa Scholastics. All statutory rights reserved.
+            © 2026 Adhi Shankaraa Scholastics. All rights reserved.
           </p>
-          <p className="font-label-sm text-label-sm text-secondary-fixed">
-            Managed in accordance with Andhra Pradesh Societies Registration Act, 2001.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-space-2xs sm:gap-space-md">
+            <a
+              className="font-label-sm text-label-sm text-surface-bright/90 hover:text-secondary-fixed transition-colors underline underline-offset-2"
+              href="#/privacy"
+            >
+              Privacy Policy
+            </a>
+            <p className="font-label-sm text-label-sm text-secondary-fixed">
+              Educational supplies and institutional services for schools across Andhra Pradesh.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
